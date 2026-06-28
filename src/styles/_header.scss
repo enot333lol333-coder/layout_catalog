@@ -1,17 +1,16 @@
 .header {
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid $color-border;
 
   &__inner {
     display: flex;
-    align-items: stretch;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
     height: 60px;
     padding: 0 40px;
   }
 }
 
 .logo {
-  display: flex;
-  align-items: center;
-  margin-right: auto;
   flex-shrink: 0;
 }
