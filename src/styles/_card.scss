@@ -1,9 +1,9 @@
 .card {
-  width: 200px;
+  width: $card-width;
   padding: 16px;
-  background: #fff;
+  background: $color-white;
   position: relative;
-  transition: transform 300ms;
+  transition: transform $transition;
 
   &__image {
     width: 100%;
@@ -13,14 +13,14 @@
   &__title {
     font-size: 14px;
     font-weight: 700;
-    color: #060b35;
+    color: $color-dark;
     margin: 8px 0 4px;
-    transition: color 300ms;
+    transition: color $transition;
   }
 
   &__code {
     font-size: 11px;
-    color: #999;
+    color: $color-text-light;
     margin: 0 0 8px;
   }
 
@@ -38,7 +38,7 @@
 
   &__reviews {
     font-size: 11px;
-    color: #999;
+    color: $color-text-light;
     margin-left: 6px;
   }
 
@@ -51,21 +51,21 @@
   }
 
   &__price-label {
-    color: #999;
+    color: $color-text-light;
   }
 
   &__price-value {
     font-weight: 700;
     font-size: 20px;
-    color: #060b35;
+    color: $color-dark;
   }
 
   &__button {
     display: block;
     width: 100%;
     padding: 10px 0;
-    background: #00acdc;
-    color: #fff;
+    background: $color-primary;
+    color: $color-white;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
@@ -73,11 +73,11 @@
     font-weight: 700;
     letter-spacing: 1px;
     box-sizing: border-box;
-    transition: background 300ms, color 300ms;
+    transition: background $transition, color $transition;
 
     &:hover {
-      background: #fff;
-      color: #00acdc;
+      background: $color-white;
+      color: $color-primary;
     }
   }
 
@@ -87,6 +87,6 @@
   }
 
   &:hover &__title {
-    color: #34568b;
+    color: $color-title-hover;
   }
 }
